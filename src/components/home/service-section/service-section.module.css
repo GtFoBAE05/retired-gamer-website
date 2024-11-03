@@ -1,0 +1,14 @@
+.servicesOuterContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesContainer {
+    width: 100%;
+    padding: 16px 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
