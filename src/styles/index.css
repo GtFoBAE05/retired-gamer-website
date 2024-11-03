@@ -105,6 +105,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 640px) {
+    body {
+    }
+}
+
 @media (min-width: 768px) {
     body {
     }
