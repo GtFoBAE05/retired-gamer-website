@@ -2,7 +2,6 @@ h2{
     text-align: center;
 }
 .ourGamesContainer{
-    height: 100%;
     padding: 16px 64px;
     display: flex;
     flex-direction: column;

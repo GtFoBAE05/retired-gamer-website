@@ -1,6 +1,6 @@
 import ServiceItem from "./service-item";
 import style from "./service-section.module.css";
-export default function ourService(){
+export default function OurService(){
     return(
         <>
             <div className={style.servicesOuterContainer}>
