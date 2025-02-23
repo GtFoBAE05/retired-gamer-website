@@ -1,48 +1,54 @@
-*{
-    box-sizing: border-box;
-}
-
-/* body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
 .serviceItemContainer {
     cursor: pointer;
-    background-color: #393939;
+    background-color: #1E2C43;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
     border-radius: 8px;
+    padding: 32px;
+    transition: outline .2s ease-out;
+    box-sizing: border-box;
 }
+
+.serviceItemContainer:hover {
+    outline: 2px solid #F0F0F0;
+}
+
 
 .serviceItemTextContainer {
     width: 100%;
-    text-align: center;
     display: flex;
-    margin: 0 24px;
     flex-direction: column;
+    text-align: start;
 }
 
-img {
+.serviceItemTextContainer h2{
+    height: 2.2em;
+}
+
+.serviceItemTextContainer p{
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+.serviceItemImage {
     width: 100%;
-    height: 100px;
+    height: auto;
+    max-width: 48px;
     object-fit: cover;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
 }
 
 @media (min-width: 640px) {
     .serviceItemContainer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 48px;
+        height: 100%;
     }
 
     .serviceItemTextContainer {
@@ -50,14 +56,10 @@ img {
         flex-direction: column;
     }
 
-    img {
+    .serviceItemImage {
         width: 100%;
-        height: 200px;
-
-        border-top-left-radius: 8px;
-        border-top-right-radius: 0px;
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 0px;
+        height: auto;
+        max-width: 64px;
     }
 }
 
@@ -67,22 +69,23 @@ img {
 @media (min-width: 1024px) {
     .serviceItemContainer {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: start;
+        gap: 16px;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding: 48px;
     }
 
     .serviceItemTextContainer {
         display: flex;
         flex-direction: column;
     }
-    img {
-         width: 100%;
-         height: 300px;
-
-         border-top-left-radius: 8px;
-         border-top-right-radius: 0px;
-         border-bottom-left-radius: 8px;
-         border-bottom-right-radius: 0px;
-     }
+    .serviceItemImage {
+        width: 100%;
+        height: auto;
+        max-width: 64px;
+    }
 }
 
 @media (min-width: 1280px) {

@@ -1,69 +1,62 @@
 .gameItemContainer {
     cursor: pointer;
-    background-color: #393939;
+    background-color: rgba(67, 92, 118, 0.52);
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     border-radius: 8px;
+    padding: 16px;
+    height: 100%;
+    box-sizing: border-box;
+    transition: outline .2s ease-out;
+
 }
+
+.gameItemContainer:hover {
+    outline: 2px solid #F0F0F0;
+}
+
 
 .gameItemTextContainer {
     width: 100%;
-    text-align: center;
+    height: auto;
+    text-align: start;
     display: flex;
-    margin: 0 24px;
     flex-direction: column;
+    padding: 0 24px;
+    gap: 8px;
 }
 
-img {
+.gameImage {
+    margin: 16px 0;
     width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
+    height: auto;
+    border-radius: 8px;
 }
-
 
 @media (min-width: 640px) {
     .gameItemContainer {
-        display: flex;
-        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
     }
 
     .gameItemTextContainer {
-        display: flex;
-        flex-direction: column;
+        padding: 0 16px;
     }
 
-    img {
-        width: 100%;
-        height: 200px;
-    }
-}
-
-@media (min-width: 768px) {
 }
 
 @media (min-width: 1024px) {
     .gameItemContainer {
-        display: flex;
-        flex-direction: row;
+        flex: 0 0 30%
     }
 
     .gameItemTextContainer {
-        display: flex;
-        flex-direction: column;
+        padding: 0 24px;
     }
-    img {
-         width: 100%;
-         height: 300px;
-     }
-}
 
-@media (min-width: 1280px) {
-}
-
-h1{
-    color: red;
+    .gameImage {
+        width: 100%;
+        height: auto;
+    }
 }

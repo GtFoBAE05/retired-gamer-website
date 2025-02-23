@@ -11,13 +11,11 @@ export default function GamesItem(props) {
             <div
                 onClick={handleClick}
                 className={style.gameItemContainer}>
+                <img className={style.gameImage} src={props.image} alt=""/>
                 <div className={style.gameItemTextContainer}>
-                    <h3>{props.gameName}</h3>
+                    <h2>{props.gameName}</h2>
                     <p>{props.gameDescription}</p>
                 </div>
-
-                <img src={props.image} alt=""/>
-
             </div>
         </>
     )

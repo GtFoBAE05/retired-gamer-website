@@ -1,11 +1,36 @@
 import style from './footer.module.css'
+import logo from '../../assets/images/spr_company_icon_1024.png'
+import tiktok from '../../assets/icons/tiktok.svg'
+import itchio from '../../assets/icons/itchio.svg'
+import email from '../../assets/icons/email.svg'
+
 export default function Footer() {
     return (
         <>
             <div className={style.footerContainer}>
-                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F820%2F758%2Foriginal%2Fgamer-line-icon-design-free-vector.jpg&f=1&nofb=1&ipt=7fa3a1f568224f50579bc848adba44c3dadceef5aa40a891e378da03f6fcb256&ipo=images" alt=""/>
-                <h3>Copyright © 2024| RETIRED GAMER</h3>
-                <a href=""><img src="https://static-00.iconduck.com/assets.00/itch-io-icon-1024x1024-fev9qpvd.png" alt=""/></a>
+                <div className={style.footerContainerCompany}>
+                    <img className={style.footerContainerCompanyIcon} src={logo} alt=""/>
+                </div>
+                <div className={style.footerContact}>
+                    <div className={style.footerSocialMedia}>
+                        <a href=""><img className={style.footerSocialMediaImage}
+                                        src={itchio}
+                                        alt="itch.io"/></a>
+                        <a href=""><img className={style.footerSocialMediaImage}
+                                        src={tiktok}
+                                        alt="tiktok"/></a>
+
+                    </div>
+                    <div className={style.footerContactInformationItem}>
+                        <div className={style.footerContactInformationItemImage}>
+                            <img className={style.footerSocialMediaImage}
+                                 src={email}
+                                 alt="itch.io"/>
+                        </div>
+                        <h3 className={style.footerContactInformationItemText}>retiredgamer@gmail.com</h3>
+                    </div>
+
+                </div>
             </div>
         </>
     )

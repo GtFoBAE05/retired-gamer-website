@@ -1,9 +1,35 @@
-h2{
+.ourGameTitle {
     text-align: center;
 }
-.ourGamesContainer{
-    padding: 16px 64px;
+
+.ourGamesContainer {
+    padding: 32px 64px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 16px;
+    background-color: #1B2838;
 }
+.ourGamesItemLists {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    gap: 32px;
+    justify-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 1024px) {
+    .ourGamesItemLists {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+

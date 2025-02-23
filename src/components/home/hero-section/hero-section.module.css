@@ -1,12 +1,58 @@
-
-
 .heroSectionContainer {
-    height: 50vh;
     margin: 0;
-    padding: 0 64px;
+    padding: 32px 64px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
+}
+
+.logoImage{
+    width: 188px;
+    height: 188px;
+    margin-bottom: 32px;
+}
+
+.textContainer h2{
+    font-size: 16px;
+    font-weight: normal;
     text-align: center;
+}
+
+
+@media (min-width: 640px) {
+    .heroSectionContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 64px 64px;
+    }
+    .logoImage{
+        width: 244px;
+        height: auto;
+    }
+    .textContainer h2{
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+    .logoImage{
+        width: 288px;
+        height: auto;
+    }
+
+    .textContainer h2{
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
 }

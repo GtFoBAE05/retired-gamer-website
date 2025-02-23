@@ -1,13 +1,14 @@
 import style from '../hero-section/hero-section.module.css';
+import logo from '../../../assets/images/spr_company_icon_1024.png'
 
 export default function Hero(){
     return (
         <>
             <div className={style.heroSectionContainer}>
-                <h1>Retired Gamer!</h1>
-                <h2>This website is dedicated to providing information and resources for those who have retired from
-                    gaming.</h2>
-                <h2>Feel free to explore our collection of retired games, articles, and resources.</h2>
+                <img className={style.logoImage} src={logo} alt=""/>
+                <div className={style.textContainer}>
+                    <h2 >From gamers to creators, we build immersive experiences that bring your game vision to life.</h2>
+                </div>
             </div>
         </>
     );
